@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreathArt | Professional Photography Studio Landing Page</title>
+    <meta name="description" content="Welcome to BreathArt, where every moment is captured with cinematic precision.">
+    
+    <!-- Cinematic Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cinzel:wght@600;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        .landing-nav {
+            position: fixed;
+            top: 0; width: 100%; padding: 2rem 4rem;
+            display: flex; justify-content: space-between; align-items: center;
+            z-index: 1000;
+            background: rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .landing-hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/parallax_bg.png');
+            background-size: cover;
+            background-position: center;
+            padding: 0 2rem;
+        }
+
+        .landing-hero h1 {
+            font-family: var(--font-sub);
+            font-size: clamp(3rem, 10vw, 6rem);
+            letter-spacing: 15px;
+            text-transform: uppercase;
+            color: white;
+            margin-bottom: 2rem;
+        }
+
+        .landing-hero p {
+            font-family: var(--font-heading);
+            font-style: italic;
+            font-size: clamp(1rem, 4vw, 1.5rem);
+            color: var(--color-gold);
+            margin-bottom: 4rem;
+            letter-spacing: 3px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            padding: 6rem 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .stat-item h2 {
+            font-size: 3.5rem;
+            color: var(--color-gold);
+            font-family: var(--font-sub);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .landing-nav { padding: 1.5rem 2rem; }
+        }
+    </style>
+</head>
+<body class="fade-in active">
+
+    <!-- Landing Navigation -->
+    <nav class="landing-nav" id="navbar">
+        <a href="index.html" class="logo">BreathArt</a>
+        <a href="#contact" class="btn btn-gold" style="padding: 0.8rem 2rem; font-size: 0.7rem;">Book Now</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="landing-hero">
+        <div class="animate-reveal">
+            <h1>Expertise.</h1>
+            <p>Elevating Moments into Cinematic Art.</p>
+            <div class="hero-buttons">
+                <a href="index.html" class="btn btn-gold">Enter Studio</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Benefits Section -->
+    <section id="about" class="section" style="background:#0a0a0a;">
+        <div class="container text-center">
+            <span class="cinematic-title">Why BreathArt?</span>
+            <h2 class="section-title">The Standard of Excellence</h2>
+            
+            <div class="grid-2" style="margin-top:6rem; gap: 6rem; align-items: center;">
+                <div class="animate-reveal">
+                    <img src="assets/parallax_bg.png" alt="Excellence" style="width:100%; border-radius:12px; filter:grayscale(30%);">
+                </div>
+                <div class="animate-reveal" style="text-align:left;">
+                    <h3 style="font-family:var(--font-heading); font-size:2.5rem; margin-bottom:2rem;">Crafting Your Story with Precision</h3>
+                    <p style="color:var(--color-text-muted); line-height:1.8; margin-bottom:2rem;">
+                        We don't just take photos; we curate visual legacies. Our studio combines state-of-the-art equipment with a deep understanding of lighting and storytelling.
+                    </p>
+                    <ul style="list-style:none; color:var(--color-gold);">
+                        <li style="margin-bottom:1rem;"><i class="fas fa-check-circle" style="margin-right:15px;"></i> Master level post-production</li>
+                        <li style="margin-bottom:1rem;"><i class="fas fa-check-circle" style="margin-right:15px;"></i> Exclusive studio environments</li>
+                        <li style="margin-bottom:1rem;"><i class="fas fa-check-circle" style="margin-right:15px;"></i> Personalized creative direction</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid">
+                <div class="stat-item animate-reveal">
+                    <h2>10+</h2>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item animate-reveal" style="transition-delay:0.1s;">
+                    <h2>1k+</h2>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="stat-item animate-reveal" style="transition-delay:0.2s;">
+                    <h2>24h</h2>
+                    <p>Photo Delivery</p>
+                </div>
+                <div class="stat-item animate-reveal" style="transition-delay:0.3s;">
+                    <h2>50+</h2>
+                    <p>Design Awards</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Highlights -->
+    <section class="section">
+        <div class="container">
+            <div class="services-grid">
+                <div class="feature-card animate-reveal">
+                    <i class="fas fa-camera-retro" style="font-size:3rem; color:var(--color-gold); margin-bottom:2rem;"></i>
+                    <h3 style="font-family:var(--font-heading); margin-bottom:1rem;">Bespoke Sessions</h3>
+                    <p style="color:var(--color-text-muted);">Tailored photography experiences designed specifically for your unique requirements.</p>
+                </div>
+                <div class="feature-card animate-reveal" style="transition-delay:0.2s;">
+                    <i class="fas fa-gem" style="font-size:3rem; color:var(--color-gold); margin-bottom:2rem;"></i>
+                    <h3 style="font-family:var(--font-heading); margin-bottom:1rem;">Luxury Quality</h3>
+                    <p style="color:var(--color-text-muted);">Uncompromising commitment to high-end results and artistic perfection.</p>
+                </div>
+                <div class="feature-card animate-reveal" style="transition-delay:0.4s;">
+                    <i class="fas fa-user-friends" style="font-size:3rem; color:var(--color-gold); margin-bottom:2rem;"></i>
+                    <h3 style="font-family:var(--font-heading); margin-bottom:1rem;">Client Focused</h3>
+                    <p style="color:var(--color-text-muted);">Your comfort and vision are our top priorities throughout the entire process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="background:#050505;">
+        <div class="container">
+            <div class="grid-2" style="align-items: center; gap: 8rem;">
+                <div class="animate-reveal">
+                    <span class="cinematic-title">Consultation</span>
+                    <h2 class="section-title">Initiate Your Vision</h2>
+                    <p style="color:var(--color-text-muted); margin-bottom:3rem;">
+                        Ready to capture your story? Fill out the form below, and our creative director will contact you within 24 hours.
+                    </p>
+                    <div style="margin-bottom:2rem;">
+                        <p style="font-size:0.8rem; letter-spacing:2px; color:var(--color-gold); text-transform:uppercase;">Direct Inquiries</p>
+                        <p style="font-size:1.2rem;">hello@breathart.com</p>
+                    </div>
+                </div>
+                <div class="content-box dark" style="background:rgba(255,255,255,0.02); border: 1px solid rgba(212,175,55,0.1); padding: 4rem;">
+                    <form onsubmit="event.preventDefault(); alert('Request Received. We will contact you soon.');">
+                        <div style="margin-bottom: 2rem;">
+                            <input type="text" class="form-control" placeholder="Your Name" style="border-bottom:1px solid rgba(212,175,55,0.2); color:white;" required>
+                        </div>
+                        <div style="margin-bottom: 2rem;">
+                            <input type="email" class="form-control" placeholder="Email Address" style="border-bottom:1px solid rgba(212,175,55,0.2); color:white;" required>
+                        </div>
+                        <div style="margin-bottom: 3rem;">
+                            <textarea class="form-control" placeholder="Message / Required Service" style="border-bottom:1px solid rgba(212,175,55,0.2); color:white; min-height:100px;" required></textarea>
+                        </div>
+                        <button class="btn btn-gold" style="width:100%;">Get Free Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h2 class="logo" style="margin-bottom: 1.5rem; font-size: 1.5rem; text-align: left;">BreathArt</h2>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.8;">
+                        Dubai's premium photography studio specializing in capturing cinematic stories that last a lifetime.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="works.html">Portfolio</a></li>
+                        <li><a href="album.html">Album</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="brochures.html">Brochures</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="landing.html" style="color:var(--color-gold);">Landing Page</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

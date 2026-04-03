@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Album | BreathArt Premium Photography</title>
+    <meta name="description" content="Explore our captured moments and creative photography collections in our premium photo album.">
+    
+    <!-- Cinematic Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cinzel:wght@600;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="theme-dark fade-in active">
+
+    <!-- Global Navigation -->
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">BreathArt</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">Portfolio</a></li>
+                <li><a href="album.html" class="active">Album</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="brochures.html">Brochures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Album Header -->
+    <header class="page-header album-header">
+        <div class="container text-center animate-reveal active">
+            <span class="cinematic-title" style="color:var(--color-gold);">Our Collection</span>
+            <h1 class="main-title">Photo Album</h1>
+            <p class="subtitle text-gold">Explore our captured moments and creative photography collections</p>
+        </div>
+    </header>
+
+    <!-- Category Filters -->
+    <section class="filter-section">
+        <div class="container text-center">
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="nature">Nature</button>
+                <button class="filter-btn" data-filter="fashion">Fashion</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Gallery Grid -->
+    <section class="album-gallery section">
+        <div class="container-fluid">
+            <div class="gallery-grid" id="gallery-grid">
+                
+                <!-- Gallery Item 1 (Wedding) -->
+                <div class="gallery-item" data-category="wedding">
+                    <div class="gallery-frame">
+                        <img src="assets/wedding.png" alt="Wedding Bliss" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Eternal Love</h3>
+                                <button class="view-btn">View Photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 (Portrait) -->
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-frame">
+                        <img src="assets/portrait.png" alt="Fine Art Portrait" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>The Soul Frame</h3>
+                                <button class="view-btn">View Photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 (Events) -->
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-frame">
+                        <img src="assets/event.png" alt="Grand Gala" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Stellar Night</h3>
+                                <button class="view-btn">View Photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 (Nature) -->
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-frame">
+                        <img src="assets/nature.png" alt="Wild Spirit" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Golden Wilderness</h3>
+                                <button class="view-btn">View Photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 (Fashion) -->
+                <div class="gallery-item" data-category="fashion">
+                    <div class="gallery-frame">
+                        <img src="assets/luxury.png" alt="Luxury Fashion" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Opulent Vogue</h3>
+                                <button class="view-btn">View Photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 (Newborn) - fallback to portrait -->
+                <div class="gallery-item" data-category="portrait">
+                    <div class="gallery-frame">
+                        <img src="assets/newborn.png" alt="Newborn Innocence" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Pure Beginnings</h3>
+                                <button class="view-btn">View Photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More items using existing assets -->
+                <div class="gallery-item" data-category="wedding">
+                    <div class="gallery-frame">
+                        <img src="assets/parallax_bg.png" alt="Scenic Wedding" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Skyline Vows</h3>
+                                <button class="view-btn">View Photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="fashion">
+                    <div class="gallery-frame">
+                        <img src="assets/minimal.png" alt="Minimalist Fashion" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Modern Grace</h3>
+                                <button class="view-btn">View Photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events">
+                    <div class="gallery-frame">
+                        <img src="assets/corporate.png" alt="Corporate Event" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <h3>Executive Vision</h3>
+                                <button class="view-btn">View Photo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Viewer Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-content">
+            <button class="lb-prev"><i class="fas fa-chevron-left"></i></button>
+            <img id="lightbox-img" src="" alt="Zoomed Photo">
+            <button class="lb-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h2 class="logo" style="margin-bottom: 1.5rem; font-size: 1.5rem; text-align: left;">BreathArt</h2>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.8;">
+                        Dubai's premium photography studio specializing in capturing cinematic stories that last a lifetime.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="works.html">Portfolio</a></li>
+                        <li><a href="album.html">Album</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="brochures.html">Brochures</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="landing.html">Landing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+                        <i class="fas fa-envelope" style="color: var(--color-gold); margin-right: 10px;"></i>
+                        <a href="mailto:hello@breathart.com">hello@breathart.com</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/971000000000" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BreathArt Creative Vision Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/971000000000" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

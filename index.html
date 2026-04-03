@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreathArt | Capture the Moment. Create the Story.</title>
+    <meta name="description" content="Premium photography studio for professional weddings, portraits, and creative visuals.">
+    
+    <!-- Cinematic Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cinzel:wght@600;700&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="fade-in active">
+
+    <!-- VISIBLE PHOTOGRAPHY BACKGROUND LAYERS -->
+    <div class="blueprint-layer"></div>
+    <div class="global-bg" id="scroll-bg"></div>
+
+    <!-- Global Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">BreathArt</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="works.html">Portfolio</a></li>
+                <li><a href="album.html">Album</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="brochures.html">Brochures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Ultra-Premium Hero Section -->
+    <header class="hero">
+        <div class="hero-canvas"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="container hero-split">
+            <!-- Left Side: Cinematic Copy -->
+            <div class="hero-left">
+                <h1>BreathArt - <span class="text-gold">Photography</span> that touches your <span class="text-gold">heart.</span></h1>
+                <p>Turning fleeting moments into timeless memories, one frame at a time.</p>
+                <div class="hero-buttons">
+                    <a href="works.html" class="btn btn-gold">View Portfolio</a>
+                    <a href="contact.html" class="btn btn-outline">Book a Session</a>
+                </div>
+            </div>
+
+            <!-- Ultra-Realistic 3D Album Book -->
+            <div class="hero-right">
+                <div class="album-container">
+                    <div class="album-glow"></div>
+                    <div class="album-book closed" id="album-book">
+                        <!-- Front Cover -->
+                        <div class="album-cover" id="album-cover">
+                            <div class="cover-content">
+                                <span class="cinematic-title">Studio Edition</span>
+                                <h2 class="cover-logo">BreathArt</h2>
+                                <p class="cover-tagline">Cinematic Memories</p>
+                            </div>
+                        </div>
+
+                        <!-- Photography Pages -->
+                        <div class="album-page" style="background-image: url('assets/wedding.png'); --i:1"></div>
+                        <div class="album-page" style="background-image: url('assets/portrait.png'); --i:2"></div>
+                        <div class="album-page" style="background-image: url('assets/newborn.png'); --i:3"></div>
+                        <div class="album-page" style="background-image: url('assets/event.png'); --i:4"></div>
+                        <div class="album-page" style="background-image: url('assets/corporate.png'); --i:5"></div>
+                    </div>
+                    <div class="album-label active">Touch to Explore Portfolio</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span class="cinematic-title" style="font-size:0.6rem; color:var(--color-gold);">Scroll To Explore</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Signature Services -->
+    <section id="services" class="section">
+        <div class="container text-center animate-reveal">
+            <span class="cinematic-title">Studio Excellence</span>
+            <h2 class="section-title">Visual Expertise</h2>
+            <div class="folio-grid">
+                <div class="folio-item animate-reveal" style="grid-column: span 2;">
+                    <img src="assets/parallax_bg.png" alt="Collective Vision">
+                    <div style="position:absolute; bottom:2rem; left:2rem; text-align:left;">
+                        <h4 style="font-size:1.8rem; font-family:var(--font-heading); text-transform:capitalize;">The Creative Direction</h4>
+                        <p style="color:var(--color-gold); font-size:0.7rem; text-transform:uppercase; letter-spacing:3px;">Consulting and Styling</p>
+                    </div>
+                </div>
+                <div class="folio-item animate-reveal">
+                    <img src="assets/wedding.png" alt="Signature Weddings">
+                    <div style="position:absolute; top:2rem; left:2rem;">
+                        <h4 style="font-size:1.5rem; font-family:var(--font-heading);">Wedding Photography | Capture Your Big Day Forever</h4>
+                    </div>
+                </div>
+                <div class="folio-item animate-reveal">
+                    <img src="assets/portrait.png" alt="Fine Art Portraits">
+                    <div style="position:absolute; top:2rem; left:2rem;">
+                        <h4 style="font-size:1.5rem; font-family:var(--font-heading);">Newborn Photography Studio – Beautiful Baby Portraits</h4>
+                    </div>
+                </div>
+                <div class="folio-item animate-reveal" style="grid-column: span 2;">
+                    <img src="assets/corporate.png" alt="Corporate Branding">
+                    <div style="position:absolute; bottom:2rem; right:2rem; text-align:right;">
+                        <h4 style="font-size:1.8rem; font-family:var(--font-heading);">Corporate Photography Studio – Elevate Your Brand Image</h4>
+                        <p style="color:var(--color-gold); font-size:0.7rem; text-transform:uppercase; letter-spacing:3px;">Authoritative Documentation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Works Overview -->
+    <section class="section" style="background:rgba(255,255,255,0.02);">
+        <div class="container animate-reveal">
+            <span class="cinematic-title">Recent Work</span>
+            <h2 class="section-title">The Collection</h2>
+            <div class="folio-grid">
+                <div class="folio-item animate-reveal">
+                    <img src="assets/luxury.png" alt="Luxury Portfolio">
+                </div>
+                <div class="folio-item animate-reveal">
+                    <img src="assets/pastel.png" alt="Pastel Portfolio">
+                </div>
+                <div class="folio-item animate-reveal">
+                    <img src="assets/newborn.png" alt="Newborn Portfolio">
+                </div>
+                <div class="folio-item animate-reveal">
+                    <img src="assets/family.png" alt="Family Portfolio">
+                </div>
+                <div class="folio-item animate-reveal">
+                    <img src="assets/minimal.png" alt="Minimal Portfolio">
+                </div>
+                <div class="folio-item animate-reveal">
+                    <img src="assets/event.png" alt="Event Portfolio">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed "Why Choose Us" & Premium Experience -->
+    <section class="section" id="why-choose-us" style="background: linear-gradient(to bottom, rgba(20,20,20,1), rgba(8,8,8,1));">
+        <div class="container">
+            <div class="animate-reveal text-center" style="max-width: 800px; margin: 0 auto 6rem auto;">
+                <span class="cinematic-title">Our Philosophy</span>
+                <h2 class="section-title">Professional & Premium Experience</h2>
+                <p style="color: var(--color-text-muted); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+                    At BreathArt Photography Studio, we deliver more than just photographs—we create timeless visual experiences. With years of professional expertise, our team combines artistic vision with advanced photography techniques to capture moments with elegance and precision.
+                </p>
+                <p style="color: var(--color-text-muted); line-height: 1.8; font-size: 1.1rem; margin-bottom: 2rem;">
+                    Every photoshoot is carefully planned to provide a seamless and comfortable experience for our clients. From lighting and composition to styling and storytelling, we focus on every detail to ensure exceptional results.
+                </p>
+                <p style="color: var(--color-text-muted); line-height: 1.8; font-size: 1.1rem;">
+                    Our commitment to quality, creativity, and personalized service allows us to deliver a truly premium photography experience. Whether it is a newborn session, family portrait, corporate shoot, or wedding celebration, BreathArt ensures every moment is captured beautifully and preserved for a lifetime.
+                </p>
+            </div>
+
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                
+                <!-- Feature 1 -->
+                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.1); background: rgba(255,255,255,0.02); text-align: center; border-radius: 4px;">
+                    <i class="fas fa-user-tie" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">Experienced Professional Photographers</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem;">Master artists with decades of collective experience.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.1); background: rgba(255,255,255,0.02); text-align: center; border-radius: 4px; transition-delay: 0.1s;">
+                    <i class="fas fa-female" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">Dedicated Lady Staff for Maternity</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem;">Ensuring comfort and privacy for maternity & newborn sessions.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.1); background: rgba(255,255,255,0.02); text-align: center; border-radius: 4px; transition-delay: 0.2s;">
+                    <i class="fas fa-mountain" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">Premium Studio Environment</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem;">State-of-the-art space designed for creative excellence.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.1); background: rgba(255,255,255,0.02); text-align: center; border-radius: 4px; transition-delay: 0.3s;">
+                    <i class="fas fa-camera" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">High-End Equipment & Lighting</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem;">The latest mirrorless technology and Profoto lighting.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.1); background: rgba(255,255,255,0.02); text-align: center; border-radius: 4px; transition-delay: 0.4s;">
+                    <i class="fas fa-shipping-fast" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">Fast 24-Hour Photo Delivery</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem;">Rapid turn-around without compromising art quality.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.1); background: rgba(255,255,255,0.02); text-align: center; border-radius: 4px; transition-delay: 0.5s;">
+                    <i class="fas fa-heart" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
+                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">Trusted by 1000+ Happy Clients</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem;">Building lasting relationships through exceptional art.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h2 class="logo" style="margin-bottom: 1.5rem; font-size: 1.5rem; text-align: left;">BreathArt</h2>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.8;">
+                        Dubai's premium photography studio specializing in capturing cinematic stories that last a lifetime.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="works.html">Portfolio</a></li>
+                        <li><a href="album.html">Album</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="brochures.html">Brochures</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="landing.html">Landing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+                        <i class="fas fa-envelope" style="color: var(--color-gold); margin-right: 10px;"></i>
+                        <a href="mailto:hello@breathart.com">hello@breathart.com</a>
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/971000000000" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BreathArt Creative Vision Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/971000000000" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
