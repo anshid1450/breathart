@@ -10,9 +10,9 @@
     --color-gray: #1a1a1a;
     --color-text-muted: #ababab;
 
-    --font-heading: 'Playfair Display', serif;
-    --font-sub: 'Cinzel', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-heading: 'Bodoni Moda', serif;
+    --font-sub: 'Montserrat', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
 
     --transition-slow: 1.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -85,7 +85,7 @@ body {
     justify-content: space-between;
     width: 100%;
     z-index: 10;
-    gap: 8rem; /* Significant gap to push album to far right */
+    gap: 4rem; /* Balanced for laptop visibility */
 }
 
 .hero-left {
@@ -95,13 +95,18 @@ body {
 }
 
 .hero-left h1 {
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
-    font-size: 4rem; /* Slightly smaller to fit better */
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-family: var(--font-heading);
     color: white;
-    margin-bottom: 2rem;
-    line-height:1.1;
+    margin-bottom: 2.5rem;
+    line-height: 1;
     text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -1px;
+    background: linear-gradient(to right, #fff 40%, var(--color-gold) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero-left p {
