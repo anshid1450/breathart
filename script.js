@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Page Transition for Links
-    const links = document.querySelectorAll('a[href$=".html"]');
+    const links = document.querySelectorAll('a[href*=".html"]');
     links.forEach(link => {
         link.addEventListener('click', e => {
             const href = link.getAttribute('href');

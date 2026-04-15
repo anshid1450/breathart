@@ -10,18 +10,16 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="theme-dark fade-in active" style="background:var(--color-black); color:white;">
+<body class="theme-light fade-in active" style="background:var(--color-black); color:var(--color-white);">
 
     <nav id="navbar" class="scrolled">
         <div class="nav-container">
             <a href="index.html" class="logo">BreathArt</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="works.html">Portfolio</a></li>
-                <li><a href="album.html">Album</a></li>
                 <li><a href="services.html" class="active">Services</a></li>
-                <li><a href="brochures.html">Brochures</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -30,7 +28,7 @@
     <header class="page-header" style="height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center;">
         <div class="container container-narrow animate-reveal">
             <span class="cinematic-title" style="color:var(--color-gold);">The Expertise</span>
-            <h1 style="color:white; font-size:4rem;">Visual Offerings</h1>
+            <h1 style="color:var(--color-white); font-size:4rem;">Visual Offerings</h1>
         </div>
     </header>
 
@@ -40,7 +38,7 @@
             <div class="services-grid">
                 
                 <!-- Service 1: Newborn -->
-                <div class="flip-card animate-reveal" onclick="this.classList.toggle('flipped')">
+                <div id="service-newborn" class="flip-card animate-reveal" onclick="this.classList.toggle('flipped')">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="assets/newborn.png" alt="Newborn">
@@ -65,7 +63,7 @@
                 </div>
 
                 <!-- Service 2: Corporate -->
-                <div class="flip-card animate-reveal" onclick="this.classList.toggle('flipped')" style="transition-delay: 0.2s;">
+                <div id="service-corporate" class="flip-card animate-reveal" onclick="this.classList.toggle('flipped')" style="transition-delay: 0.2s;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="assets/corporate.png" alt="Corporate">
@@ -90,7 +88,7 @@
                 </div>
 
                 <!-- Service 3: Wedding -->
-                <div class="flip-card animate-reveal" onclick="this.classList.toggle('flipped')" style="transition-delay: 0.4s;">
+                <div id="service-wedding" class="flip-card animate-reveal" onclick="this.classList.toggle('flipped')" style="transition-delay: 0.4s;">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
                             <img src="assets/wedding.png" alt="Wedding">
@@ -109,7 +107,7 @@
                                 <div><i class="fas fa-book-open"></i> Heirloom Album</div>
                                 <div><i class="fas fa-film"></i> Cinematic Highlight Film</div>
                             </div>
-                            <a href="contact.html" class="btn btn-gold" style="padding: 1rem 2rem; background:white; color:black;">Consultation</a>
+                            <a href="contact.html" class="btn btn-gold" style="padding: 1rem 2rem; background:var(--color-white); color:var(--color-black);">Consultation</a>
                         </div>
                     </div>
                 </div>
@@ -182,13 +180,10 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="works.html">Portfolio</a></li>
-                        <li><a href="album.html">Album</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="brochures.html">Brochures</a></li>
+                        <li><a href="offers.html">Offers</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="landing.html">Landing</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
