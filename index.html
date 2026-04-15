@@ -9,7 +9,7 @@
     <!-- Cinematic Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cinzel:wght@600;700&family=Inter:wght@300;500;700&family=Bodoni+Moda:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -42,7 +42,7 @@
         <div class="container hero-split">
             <!-- Left Side: Cinematic Copy -->
             <div class="hero-left">
-                <h1>BreathArt - <span class="text-gold">Photography</span> that touches your <span class="text-gold">heart.</span></h1>
+                <h1><span style="white-space: nowrap;">BreathArt - <span class="text-gold">Photography</span></span> <br> That Touches Your <span class="text-gold">Heart.</span></h1>
                 <p>Turning fleeting moments into timeless memories, one frame at a time.</p>
                 <div class="hero-buttons">
                     <a href="services.html" class="btn btn-gold">Explore Services</a>
@@ -50,7 +50,7 @@
                 </div>
             </div>
 
-            <!-- Ultra-Realistic 3D Album Book -->
+            <!-- Ultra-Realistic 3D Album Book (Moved to Right) -->
             <div class="hero-right">
                 <div class="album-container">
                     <div class="album-glow"></div>
@@ -83,6 +83,107 @@
             </div>
         </div>
     </header>
+
+    <!-- Consolidating Services Block -->
+    <section id="our-services" class="section" style="background: white;">
+        <div class="container">
+            <div class="text-center animate-reveal" style="text-align: center; margin-bottom: 4rem;">
+                <span class="cinematic-title" style="color:var(--color-gold);">Excellence in Every Frame</span>
+                <h2 class="section-title">Our Premium Services</h2>
+                <p style="color: var(--color-text-muted); max-width: 600px; margin: 1.5rem auto 0 auto;">
+                    Professional photography solutions tailored to capture your most significant moments with cinematic elegance and artistic precision.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                
+                <!-- Service 1: Newborn -->
+                <div class="gallery-item show animate-reveal">
+                    <div class="gallery-frame" onclick="location.href='services.html#service-newborn'" style="cursor:pointer;">
+                        <img src="assets/service_newborn.png" alt="Newborn Photography">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="cinematic-title" style="color:var(--color-gold); font-size:0.7rem;">01</span>
+                                <h3>Newborn</h3>
+                                <a href="services.html#service-newborn" class="view-btn">Explore Session</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Wedding -->
+                <div class="gallery-item show animate-reveal" style="transition-delay: 0.1s;">
+                    <div class="gallery-frame" onclick="location.href='services.html#service-wedding'" style="cursor:pointer;">
+                        <img src="assets/service_wedding.png" alt="Wedding Photography">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="cinematic-title" style="color:var(--color-gold); font-size:0.7rem;">02</span>
+                                <h3>Wedding</h3>
+                                <a href="services.html#service-wedding" class="view-btn">Explore Session</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Pre-Wedding -->
+                <div class="gallery-item show animate-reveal" style="transition-delay: 0.2s;">
+                    <div class="gallery-frame" onclick="location.href='services.html#service-pre-wedding'" style="cursor:pointer;">
+                        <img src="assets/service_prewedding.png" alt="Pre-Wedding Photography">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="cinematic-title" style="color:var(--color-gold); font-size:0.7rem;">03</span>
+                                <h3>Pre-Wedding</h3>
+                                <a href="services.html#service-pre-wedding" class="view-btn">Explore Session</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: Couple -->
+                <div class="gallery-item show animate-reveal" style="transition-delay: 0.3s;">
+                    <div class="gallery-frame" onclick="location.href='services.html#service-couple'" style="cursor:pointer;">
+                        <img src="assets/service_couple.png" alt="Couple Photography">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="cinematic-title" style="color:var(--color-gold); font-size:0.7rem;">04</span>
+                                <h3>Couple</h3>
+                                <a href="services.html#service-couple" class="view-btn">Explore Session</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5: Corporate -->
+                <div class="gallery-item show animate-reveal" style="transition-delay: 0.4s;">
+                    <div class="gallery-frame" onclick="location.href='services.html#service-corporate'" style="cursor:pointer;">
+                        <img src="assets/service_corporate.png" alt="Corporate Photography">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="cinematic-title" style="color:var(--color-gold); font-size:0.7rem;">05</span>
+                                <h3>Corporate</h3>
+                                <a href="services.html#service-corporate" class="view-btn">Explore Session</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6: Event -->
+                <div class="gallery-item show animate-reveal" style="transition-delay: 0.5s;">
+                    <div class="gallery-frame" onclick="location.href='services.html#service-event'" style="cursor:pointer;">
+                        <img src="assets/service_event.png" alt="Event Photography">
+                        <div class="gallery-overlay">
+                            <div class="overlay-content">
+                                <span class="cinematic-title" style="color:var(--color-gold); font-size:0.7rem;">06</span>
+                                <h3>Event</h3>
+                                <a href="services.html#service-event" class="view-btn">Explore Session</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
     <!-- Newborn Photography Collection -->
     <section id="newborn" class="section">
@@ -118,25 +219,6 @@
             </div>
             <div class="explore-more-container animate-reveal active">
                 <a href="services.html#service-wedding" class="btn btn-outline explore-btn">Explore Wedding Stories <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Corporate Photography Collection -->
-    <section id="corporate" class="section">
-        <div class="container animate-reveal active">
-            <span class="cinematic-title" style="color:var(--color-gold);">03 / Excellence</span>
-            <h2 class="section-title">Corporate Photography</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item show" style="display:block;"><div class="gallery-frame"><img src="assets/corporate_color.png" alt="Corporate 1"><div class="gallery-overlay"><div class="overlay-content"><h3>Leadership</h3><button class="view-btn">View Full</button></div></div></div></div>
-                <div class="gallery-item show" style="display:block;"><div class="gallery-frame"><img src="assets/corporate.png" alt="Corporate 2"><div class="gallery-overlay"><div class="overlay-content"><h3>Innovation</h3><button class="view-btn">View Full</button></div></div></div></div>
-                <div class="gallery-item show" style="display:block;"><div class="gallery-frame"><img src="assets/corporate_color.png" alt="Corporate 3"><div class="gallery-overlay"><div class="overlay-content"><h3>Trust</h3><button class="view-btn">View Full</button></div></div></div></div>
-                <div class="gallery-item show" style="display:block;"><div class="gallery-frame"><img src="assets/corporate_color.png" alt="Corporate 4"><div class="gallery-overlay"><div class="overlay-content"><h3>Vision</h3><button class="view-btn">View Full</button></div></div></div></div>
-                <div class="gallery-item show" style="display:block;"><div class="gallery-frame"><img src="assets/corporate.png" alt="Corporate 5"><div class="gallery-overlay"><div class="overlay-content"><h3>Artistic Brand</h3><button class="view-btn">View Full</button></div></div></div></div>
-                <div class="gallery-item show" style="display:block;"><div class="gallery-frame"><img src="assets/corporate_color.png" alt="Corporate 6"><div class="gallery-overlay"><div class="overlay-content"><h3>Success</h3><button class="view-btn">View Full</button></div></div></div></div>
-            </div>
-            <div class="explore-more-container animate-reveal active">
-                <a href="services.html#service-corporate" class="btn btn-outline explore-btn">Explore Corporate Vision <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>

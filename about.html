@@ -6,7 +6,7 @@
     <title>About Us | BreathArt</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Cinzel:wght@600;700&family=Inter:wght@300;500;700&family=Bodoni+Moda:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -32,66 +32,100 @@
         </div>
     </header>
 
-    <section class="section">
+    <section class="section" style="padding-bottom: 0;">
         <div class="container">
-            <div class="animate-reveal text-center" style="max-width: 900px; margin: 0 auto 6rem auto;">
-                <span class="cinematic-title">Our Story</span>
-                <h2 class="section-title">Professional & Premium Experience</h2>
-                <p style="color: var(--color-text-muted); line-height: 2; font-size: 1.15rem; margin-bottom: 2rem;">
-                    At BreathArt Photography Studio, we deliver more than just photographs—we create timeless visual experiences. With years of professional expertise, our team combines artistic vision with advanced photography techniques to capture moments with elegance and precision.
-                </p>
-                <p style="color: var(--color-text-muted); line-height: 2; font-size: 1.15rem; margin-bottom: 2rem;">
-                    Every photoshoot is carefully planned to provide a seamless and comfortable experience for our clients. From lighting and composition to styling and storytelling, we focus on every detail to ensure exceptional results.
-                </p>
-                <p style="color: var(--color-text-muted); line-height: 2; font-size: 1.15rem;">
-                    Our commitment to quality, creativity, and personalized service allows us to deliver a truly premium photography experience. Whether it is a newborn session, family portrait, corporate shoot, or wedding celebration, BreathArt ensures every moment is captured beautifully and preserved for a lifetime.
-                </p>
+            <div class="text-center animate-reveal" style="text-align: center; margin-bottom: 4rem;">
+                <span class="cinematic-title" style="color:var(--color-gold);">The Standard</span>
+                <h2 class="section-title">Why Choose BreathArt</h2>
             </div>
-
+            
             <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
                 
                 <!-- Feature 1 -->
-                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.2); background: rgba(0,0,0,0.02); text-align: center; border-radius: 4px;">
-                    <i class="fas fa-user-tie" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
-                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">Experienced Professional Photographers</h3>
-                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Master artists with decades of collective experience in fine art photography.</p>
+                <div class="feature-card animate-reveal" style="height: 350px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 3rem; border-radius: 8px; background: url('assets/feature_photographers.png') center/cover no-repeat;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2; text-align: left;">
+                        <i class="fas fa-user-tie" style="font-size: 1.5rem; color: var(--color-gold); margin-bottom: 1rem;"></i>
+                        <h3 style="font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.4rem; color: #fcfcfc;">Experienced Professional Photographers</h3>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Master artists with decades of collective experience in fine art photography.</p>
+                    </div>
                 </div>
 
                 <!-- Feature 2 -->
-                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.2); background: rgba(0,0,0,0.02); text-align: center; border-radius: 4px; transition-delay: 0.1s;">
-                    <i class="fas fa-female" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
-                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">Dedicated Lady Staff for Maternity</h3>
-                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Ensuring absolute comfort, privacy, and ease for maternity & newborn sessions.</p>
+                <div class="feature-card animate-reveal" style="height: 350px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 3rem; border-radius: 8px; background: url('assets/feature_maternity.png') center/cover no-repeat; transition-delay: 0.1s;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2; text-align: left;">
+                        <i class="fas fa-female" style="font-size: 1.5rem; color: var(--color-gold); margin-bottom: 1rem;"></i>
+                        <h3 style="font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.4rem; color: #fcfcfc;">Dedicated Lady Staff for Maternity</h3>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Ensuring absolute comfort, privacy, and ease for maternity & newborn sessions.</p>
+                    </div>
                 </div>
 
                 <!-- Feature 3 -->
-                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.2); background: rgba(0,0,0,0.02); text-align: center; border-radius: 4px; transition-delay: 0.2s;">
-                    <i class="fas fa-mountain" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
-                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">Premium Studio Environment</h3>
-                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">A state-of-the-art space designed for creative excellence and high-fashion aesthetics.</p>
+                <div class="feature-card animate-reveal" style="height: 350px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 3rem; border-radius: 8px; background: url('assets/feature_studio.png') center/cover no-repeat; transition-delay: 0.2s;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2; text-align: left;">
+                        <i class="fas fa-mountain" style="font-size: 1.5rem; color: var(--color-gold); margin-bottom: 1rem;"></i>
+                        <h3 style="font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.4rem; color: #fcfcfc;">Premium Studio Environment</h3>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">A state-of-the-art space designed for creative excellence and high-fashion aesthetics.</p>
+                    </div>
                 </div>
 
                 <!-- Feature 4 -->
-                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.2); background: rgba(0,0,0,0.02); text-align: center; border-radius: 4px; transition-delay: 0.3s;">
-                    <i class="fas fa-camera" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
-                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">High-End Equipment & Lighting</h3>
-                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Utilizing the latest mirrorless technology and professional studio lighting.</p>
+                <div class="feature-card animate-reveal" style="height: 350px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 3rem; border-radius: 8px; background: url('assets/feature_equipment.png') center/cover no-repeat; transition-delay: 0.3s;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2; text-align: left;">
+                        <i class="fas fa-camera" style="font-size: 1.5rem; color: var(--color-gold); margin-bottom: 1rem;"></i>
+                        <h3 style="font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.4rem; color: #fcfcfc;">High-End Equipment & Lighting</h3>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Utilizing the latest mirrorless technology and professional studio lighting.</p>
+                    </div>
                 </div>
 
                 <!-- Feature 5 -->
-                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.2); background: rgba(0,0,0,0.02); text-align: center; border-radius: 4px; transition-delay: 0.4s;">
-                    <i class="fas fa-shipping-fast" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
-                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">Fast 24-Hour Photo Delivery</h3>
-                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Rapid turn-around without compromising the artistry of post-production.</p>
+                <div class="feature-card animate-reveal" style="height: 350px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 3rem; border-radius: 8px; background: url('assets/feature_delivery.png') center/cover no-repeat; transition-delay: 0.4s;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2; text-align: left;">
+                        <i class="fas fa-shipping-fast" style="font-size: 1.5rem; color: var(--color-gold); margin-bottom: 1rem;"></i>
+                        <h3 style="font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.4rem; color: #fcfcfc;">Fast 24-Hour Photo Delivery</h3>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Rapid turn-around without compromising the artistry of post-production.</p>
+                    </div>
                 </div>
 
                 <!-- Feature 6 -->
-                <div class="feature-card animate-reveal" style="padding: 3rem; border: 1px solid rgba(212, 175, 55, 0.2); background: rgba(0,0,0,0.02); text-align: center; border-radius: 4px; transition-delay: 0.5s;">
-                    <i class="fas fa-heart" style="font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1.5rem;"></i>
-                    <h3 style="font-family: var(--font-heading); margin-bottom: 1rem; font-size: 1.4rem;">Trusted by 1000+ Happy Clients</h3>
-                    <p style="color: var(--color-text-muted); font-size: 0.95rem;">Building lasting relationships through exceptional art and trusted services.</p>
+                <div class="feature-card animate-reveal" style="height: 350px; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end; padding: 3rem; border-radius: 8px; background: url('assets/service_wedding.png') center/cover no-repeat; transition-delay: 0.5s;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.3)); z-index: 1;"></div>
+                    <div style="position: relative; z-index: 2; text-align: left;">
+                        <i class="fas fa-heart" style="font-size: 1.5rem; color: var(--color-gold); margin-bottom: 1rem;"></i>
+                        <h3 style="font-family: var(--font-heading); margin-bottom: 0.5rem; font-size: 1.4rem; color: #fcfcfc;">Trusted by 1000+ Happy Clients</h3>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">Building lasting relationships through exceptional art and trusted services.</p>
+                    </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="story">
+        <div class="container">
+            <div class="animate-reveal text-center" style="max-width: 900px; margin: 0 auto;">
+                <span class="cinematic-title">Our Story</span>
+                <h2 class="section-title">Professional & Premium Experience</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; text-align: left; margin-top: 4rem;">
+                    <div>
+                        <p style="color: var(--color-text-muted); line-height: 2; font-size: 1rem; margin-bottom: 2rem;">
+                            At BreathArt Photography Studio, we deliver more than just photographs—we create timeless visual experiences. With years of professional expertise, our team combines artistic vision with advanced photography techniques to capture moments with elegance and precision.
+                        </p>
+                        <p style="color: var(--color-text-muted); line-height: 2; font-size: 1rem;">
+                            Every photoshoot is carefully planned to provide a seamless and comfortable experience for our clients. From lighting and composition to styling and storytelling, we focus on every detail to ensure exceptional results.
+                        </p>
+                    </div>
+                    <div>
+                        <p style="color: var(--color-text-muted); line-height: 2; font-size: 1rem; margin-bottom: 2rem;">
+                            Our commitment to quality, creativity, and personalized service allows us to deliver a truly premium photography experience. Whether it is a newborn session, family portrait, corporate shoot, or wedding celebration, BreathArt ensures every moment is captured beautifully and preserved for a lifetime.
+                        </p>
+                        <a href="contact.html" class="btn btn-gold" style="width: fit-content;">Contact Our Team</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
