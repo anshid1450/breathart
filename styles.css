@@ -4,10 +4,13 @@
 */
 
 :root {
-    --color-black: #fcfcfc; /* Now background */
+    --color-black: #ffffff; /* Main background */
     --color-gold: #c5a021;   /* Deeper gold for contrast */
-    --color-white: #0a0a0a; /* Now main text */
-    --color-gray: #f2f2f2;  /* Light card bg */
+    --color-white: #111111; /* Main text (dark) */
+    --color-gray: #fcfcfc;  /* Very Light card bg */
+    --color-shade-1: #fcfcfc;
+    --color-shade-2: #f8f8f8;
+    --color-shade-3: #f3f3f3;
     --color-text-muted: #666666;
 
     --font-heading: 'Outfit', sans-serif;
@@ -28,30 +31,37 @@ body {
     overflow-x: hidden;
 }
 
-/* --- VISIBLE SCROLLING PHOTOGRAPHY BACKGROUND --- */
+/* --- PREMIUM WHITE GEOMETRIC BACKGROUND WITH STANDARD SHADES --- */
 .global-bg {
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 200vh; /* Extra height for scrolling */
+    top: 0; left: 0; width: 100%; height: 100vh;
     z-index: -1;
     pointer-events: none;
-    background-image: url('assets/contact_sheet.png');
-    background-size: cover;
-    background-repeat: repeat-y;
-    opacity: 0.08; /* Subtle background pattern */
-    mix-blend-mode: multiply;
-    transition: transform 0.1s linear;
+    background: transparent;
+    overflow: hidden;
+}
+
+.global-bg::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    /* Subtle premium dot pattern */
+    background-image: radial-gradient(circle at 1.5px 1.5px, #f0f0f0 1px, transparent 0);
+    background-size: 40px 40px;
+    opacity: 0.8;
 }
 
 .blueprint-layer {
     position: fixed;
     top: 0; left: 0; width: 100%; height: 100%;
     z-index: -2;
-    background-image: url('assets/blueprint.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.05;
-    mix-blend-mode: multiply;
+    background-color: var(--color-black);
+    background-image: 
+        radial-gradient(circle at 0% 0%, var(--color-shade-1) 0%, transparent 50%),
+        radial-gradient(circle at 100% 0%, var(--color-shade-2) 0%, transparent 50%),
+        radial-gradient(circle at 100% 100%, var(--color-shade-3) 0%, transparent 50%),
+        radial-gradient(circle at 0% 100%, var(--color-shade-2) 0%, transparent 50%),
+        linear-gradient(135deg, rgba(255,255,255,0.4) 0%, rgba(245,245,245,0.3) 50%, rgba(255,255,255,0.4) 100%);
 }
 
 /* --- PREMIUM CINEMATIC HERO SECTION --- */
@@ -61,7 +71,7 @@ body {
     align-items: center;
     position: relative;
     overflow: hidden;
-    background: radial-gradient(circle at 70% 50%, rgba(240,240,240,0.8) 0%, var(--color-black) 100%);
+    background: radial-gradient(circle at 70% 50%, rgba(250,250,250,0.9) 0%, transparent 100%);
     padding-top: 160px; /* Increased to avoid overlap with fixed navbar */
 }
 

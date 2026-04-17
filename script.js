@@ -125,7 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Page Transition for Links
+    // Page Transition for Links (Removed for stability)
+    /*
     const links = document.querySelectorAll('a[href*=".html"]');
     links.forEach(link => {
         link.addEventListener('click', e => {
@@ -141,6 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 600);
         });
     });
+    */
 
     // Final Post-Load active
     setTimeout(() => {

@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "description": "Premium Photography Studio Portfolio",
   "scripts": {
-    "dev": "npx serve ."
+    "dev": "npx http-server . -p 8080"
   }
 }
